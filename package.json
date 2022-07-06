@@ -1,0 +1,41 @@
+{
+  "name": "fp_study_notes_intro_to_react",
+  "version": "1.0.0",
+  "description": "[Intro to React](https://github.com/getfutureproof/fp_guides_wiki/wiki/Intro-to-React)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
+    "test": "react-scripts test --setupFilesAfterEnv ./src/test/setupTests.js",
+    "build": "webpack --config config/webpack.config.production.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getfutureproof/fp_study_notes_intro_to_react.git"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "babel-jest": "^28.1.2",
+    "babel-loader": "^8.2.1",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "jest": "^28.1.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.3.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}
